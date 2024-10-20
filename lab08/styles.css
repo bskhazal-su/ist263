@@ -1,5 +1,8 @@
 body {
     font-family: Georgia, serif;
+    background-color: #F0F8FF;
+    color: #333333;
+    margin: 20px;
 }
 
 h1, h2 {
@@ -14,45 +17,59 @@ h2 {
     font-size: 1.5em;
 }
 
-table {
-    font-family: arial, sans-serif;
-    border-collapse: collapse;
-    width: 100%;
-    margin-top: 20px; /* Adds some space above the table */
+.contact-layout {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #e0f7fa;
 }
 
-td, th {
-    border: 1px solid #dddddd;
-    text-align: left;
-    padding: 8px;
+.contact-info {
+    flex: 1;
+    margin: 0 10px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-tr:nth-child(even) {
-    background-color: #dddddd;
+form {
+    display: flex;
+    flex-direction: column;
 }
 
+label {
+    margin-bottom: 5px;
+}
 
-body {
-    background-color: #F0F8FF; /* Body background color */
-    color: #333333; /* Text color */
+input[type="text"],
+textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    background-color: #4C4CFF;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #3b3bff;
 }
 
 a {
-    color: #1E90FF; /* Link color */
+    color: #1E90FF;
+    text-decoration: none;
 }
 
-h1, h2 {
-    color: #4B0082; /* Heading color */
-}
-
-nav {
-    background-color: #4C4CFF; /* Site Navigation Background */
-}
-
-nav a {
-    color: #FFFFFF; /* Site Navigation Link Color */
-}
-
-nav a:hover {
-    background-color: #FFDD44; /* Site Navigation Highlight Color */
+a:hover {
+    text-decoration: underline;
 }
