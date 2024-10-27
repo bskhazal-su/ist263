@@ -1,0 +1,79 @@
+body {
+    font-family: Georgia, serif;
+    background-color: #F0F8FF;
+    color: #333333;
+    margin: 20px; /* Space around the content */
+}
+
+h1, h2 {
+    color: blueviolet;
+}
+
+h1 {
+    font-size: 2.5em; /* Increased font size for the main heading */
+    text-align: center; /* Center the main heading */
+    margin-bottom: 10px; /* Added margin for spacing */
+}
+
+h2 {
+    font-size: 2em; /* Increased font size for subheading */
+    text-align: center; /* Center the subheading */
+    margin-top: 20px; /* Added margin for spacing */
+}
+
+.intro-text {
+    text-align: left; /* Align intro text to the left */
+    margin: 20px 0; /* Adjusted margin */
+    font-size: 1.2em; /* Increased font size for intro text */
+    color: #555; /* Slightly darker color for contrast */
+    width: 75%; /* Set a width that matches the icons' flex size */
+}
+
+.flexbox-2 {
+    display: flex; /* Enable flexbox layout */
+    justify-content: space-between; /* Space between the columns */
+    margin: 20px 0; /* Margin for spacing */
+}
+
+.flexbox-container {
+    display: flex; /* Enable flexbox layout */
+    justify-content: space-around; /* Space out the columns */
+    flex: 3; /* Make the main skills area take 3 parts */
+    margin-right: 20px; /* Space between the main skills and the aside */
+}
+
+.other-skills {
+    flex: 1; /* Make the aside area take 1 part */
+    background-color: #e0f7fa; /* Background color */
+    color: #333; /* Text color */
+    padding: 20px; /* Increased padding inside the box */
+    border-radius: 10px; /* Curved corners */
+    margin-top: 20px; /* Space above the aside section */
+}
+
+.skill {
+    text-align: center; /* Center-align the icon and text */
+    margin: 10px; /* Margin for spacing */
+    flex: 1; /* Make all skills take equal space */
+    min-width: 100px; /* Minimum width for better layout */
+}
+
+.skill i {
+    font-size: 4em; /* Set a larger size for icons */
+    display: block; /* Ensures icons are on their own line */
+    margin-bottom: 5px; /* Spacing between icon and text */
+}
+
+.skill p {
+    font-size: 1.5em; /* Increased font size for skill names */
+    margin: 0; /* Remove default margin */
+}
+.intro-text {
+    text-align: left; /* Align intro text to the left */
+    margin: 20px 0; /* Adjusted margin */
+    font-size: 1.2em; /* Increased font size for intro text */
+    color: #555; /* Slightly darker color for contrast */
+    width: 75%; /* Set a width that matches the icons' flex size */
+    margin-left: auto; /* Center it in the flexbox */
+    margin-right: auto; /* Center it in the flexbox */
+}
