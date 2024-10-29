@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Text</title>
+    <style>
+        /* Default message */
+        #message {
+            font-size: 2em;
+            text-align: center;
+            margin-top: 20%;
+        }
+
+        /* Media query for small screens */
+        @media (max-width: 800px) {
+            #message::before {
+                content: "I'm small.";
+            }
+        }
+
+        /* Media query for large screens */
+        @media (min-width: 801px) {
+            #message::before {
+                content: "I'm large.";
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="message"></div>
+</body>
+</html>
