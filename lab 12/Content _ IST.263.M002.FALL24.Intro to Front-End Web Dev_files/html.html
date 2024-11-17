@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planet Slideshow</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Large Planet Info Section -->
+    <div id="planet-info">
+        <img id="mercury-image" src="mercury.jpg" alt="Mercury">
+        <p id="mercury-text">Mercury is the closest planet to the Sun.</p>
+        <div class="clear"></div>
+    </div>
+
+    <!-- Planet Thumbnails Section -->
+    <div id="planet-thumbnails">
+        <img class="thumbnail" src="mercury-thumbnail.jpg" alt="Mercury" onclick="PlanetsOff(); showMercury();">
+        <img class="thumbnail" src="venus-thumbnail.jpg" alt="Venus" onclick="PlanetsOff(); showVenus();">
+        <img class="thumbnail" src="earth-thumbnail.jpg" alt="Earth" onclick="PlanetsOff(); showEarth();">
+        <img class="thumbnail" src="mars-thumbnail.jpg" alt="Mars" onclick="PlanetsOff(); showMars();">
+        <img class="thumbnail" src="jupiter-thumbnail.jpg" alt="Jupiter" onclick="PlanetsOff(); showJupiter();">
+        <img class="thumbnail" src="saturn-thumbnail.jpg" alt="Saturn" onclick="PlanetsOff(); showSaturn();">
+        <img class="thumbnail" src="uranus-thumbnail.jpg" alt="Uranus" onclick="PlanetsOff(); showUranus();">
+        <img class="thumbnail" src="neptune-thumbnail.jpg" alt="Neptune" onclick="PlanetsOff(); showNeptune();">
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
