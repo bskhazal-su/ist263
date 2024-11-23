@@ -9,6 +9,7 @@
     <title>Skills</title>
 </head>
 <body>
+    <a href="#main-content" class="skip-link">Skip to Content</a>
     <nav>
         <a href="index.html.html">Home</a>
         <span>|</span>
@@ -17,48 +18,52 @@
         <a href="contact.html">Contact</a>
     </nav>
     
-    
     <h1>Technical Skills</h1> <!-- Main heading -->
     
     <p class="intro-text">This page highlights my technical skills, showcasing areas where I excel in technology.</p> <!-- Introductory text -->
 
     <div class="flexbox-2"> <!-- New parent div for flexbox 2 -->
         <div class="flexbox-container"> <!-- Parent div for flexbox 1 -->
-            <div class="skill">
-                <i class="fa-brands fa-html5"></i>
-                <p>HTML</p>
+            <div class="skill" aria-labelledby="html-skill">
+                <i class="fa-brands fa-html5" aria-hidden="true"></i>
+                <p id="html-skill">HTML</p>
             </div>
             
-            <div class="skill">
-                <i class="fa-brands fa-css3"></i>
-                <p>CSS</p>
+            <div class="skill" aria-labelledby="css-skill">
+                <i class="fa-brands fa-css3" aria-hidden="true"></i>
+                <p id="css-skill">CSS</p>
             </div>
             
-            <div class="skill">
-                <i class="fa-brands fa-js"></i>
-                <p>JavaScript</p>
+            <div class="skill" aria-labelledby="js-skill">
+                <i class="fa-brands fa-js" aria-hidden="true"></i>
+                <p id="js-skill">JavaScript</p>
             </div>
             
-            <div class="skill">
-                <i class="fa-brands fa-python"></i>
-                <p>Python</p>
+            <div class="skill" aria-labelledby="python-skill">
+                <i class="fa-brands fa-python" aria-hidden="true"></i>
+                <p id="python-skill">Python</p>
             </div>
             
-            <div class="skill">
-                <i class="fa-brands fa-github"></i>
-                <p>Git</p>
+            <div class="skill" aria-labelledby="git-skill">
+                <i class="fa-brands fa-github" aria-hidden="true"></i>
+                <p id="git-skill">Git</p>
             </div>
         </div>
 
         <!-- Other Skills Section -->
-        <aside class="other-skills"> <!-- Aside for other skills -->
-            <h2>Other Skills</h2>
-            <p>Problem Solving</p>
-            <p>Project Management</p>
-            <p>Team Collaboration</p>
-            <p>Data Analysis</p>
-            <p>Communication</p>
+        <aside class="other-skills" aria-labelledby="other-skills-heading"> <!-- Aside for other skills -->
+            <h2 id="other-skills-heading">Other Skills</h2>
+            <ul>
+                <li>Problem Solving</li>
+                <li>Project Management</li>
+                <li>Team Collaboration</li>
+                <li>Data Analysis</li>
+                <li>Communication</li>
+            </ul>
         </aside>
     </div> <!-- End of flexbox 2 -->
+
+
+
 </body>
 </html>

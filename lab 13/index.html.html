@@ -1,11 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="styles.css" type="text/css"> 
+    <link rel="stylesheet" href="styles.css" type="text/css">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bushra Khazaleh: Biography and Portfolio</title>
     <style>
+        /* Using relative font units for accessibility */
+        body {
+            font-size: 1rem; /* Relative to the root element */
+            line-height: 1.5;
+        }
+        nav a {
+            font-size: 1em; /* Scalable font size */
+        }
         .img1 {
             float: left;
             margin-right: 10px; 
@@ -14,6 +22,8 @@
     </style>
 </head>
 <body>
+    <a href="#main-content" class="skip-link">Skip to Content</a>
+    
     <nav>
         <a href="index.html" aria-label="Navigate to the home page">Home</a>
         <span>|</span>
@@ -21,27 +31,34 @@
         <span>|</span>
         <a href="contact.html" aria-label="Navigate to the contact page">Contact</a>
     </nav>
-    
 
     <header>
-        <!-- More descriptive alt attribute -->
+        <!-- Proper alt attribute for accessibility -->
         <img src="image.png.png" alt="Portrait of Bushra Khazaleh" class="profile-image" style="width:50%; height:auto;">
     </header>
 
-    <h1>Bushra Khazaleh Biography</h1>
+    <main id="main-content">
+        <h1>Bushra Khazaleh Biography</h1>
 
-    <main>
-        <h2>Personal Information</h2>
-        <p>Bushra Khazaleh</p>
-        <p>I'm an Information Management and Technology major interested in <strong>cybersecurity</strong> and protecting people's personal information.</p> 
-        <p>I am a Junior at Syracuse University hoping to one day become a cybersecurity analyst. I like to play soccer and spend time with my family and friends. In my free time, I enjoy cooking and watching TV shows.</p> 
+        <section>
+            <header>
+                <h2>Personal Information</h2>
+            </header>
+            <p>Bushra Khazaleh</p>
+            <p>I'm an Information Management and Technology major interested in <strong>cybersecurity</strong> and protecting people's personal information.</p> 
+            <p>I am a Junior at Syracuse University hoping to one day become a cybersecurity analyst. I like to play soccer and spend time with my family and friends. In my free time, I enjoy cooking and watching TV shows.</p> 
+        </section>
 
-        <h2>Hobbies</h2>
-        <ul>
-            <li>Cooking</li>
-            <li>Fashion</li>
-            <li>Soccer</li>
-        </ul>
+        <section>
+            <header>
+                <h2>Hobbies</h2>
+            </header>
+            <ul>
+                <li>Cooking</li>
+                <li>Fashion</li>
+                <li>Soccer</li>
+            </ul>
+        </section>
     </main>
 
     <footer>

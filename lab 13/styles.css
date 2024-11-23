@@ -4,7 +4,7 @@ body {
     color: #333333;
     margin: 20px; /* Space around the content */
 }
-
+.skip-link 
 h1, h2 {
     color: blueviolet;
 }
@@ -159,5 +159,7 @@ nav span {
     nav span {
         display: none; /* Keep pipes hidden */
     }
+    
 }
+
 

@@ -9,15 +9,10 @@
         .contact-layout {
             display: flex;
             flex-wrap: wrap; /* Allows items to wrap in smaller screens */
-            gap: 10px; /* Optional: Adds space between form and map */
+            gap: 10px; /* Adds space between form and map */
         }
 
-        .contact-info {
-            flex: 1 1 300px; /* Allows flexibility in width */
-            min-width: 250px; /* Ensures a minimum width */
-        }
-
-        .contact-form {
+        .contact-info, .contact-form {
             flex: 1 1 300px; /* Allows flexibility in width */
             min-width: 250px; /* Ensures a minimum width */
         }
@@ -27,87 +22,109 @@
             height: 300px; /* Adjust height as needed */
             max-width: 100%; /* Prevents overflow */
         }
+
+        label, input, textarea, button {
+            display: block;
+            margin-bottom: 8px;
+        }
     </style>
 </head>
-
 <body>
+    <a href="#main-content" class="skip-link">Skip to Content</a>
+
     <nav>
-        <a href="index.html.html">Home</a>
+        <a href="index.html.html" aria-label="Navigate to the home page">Home</a>
         <span>|</span>
-        <a href="skills.html">Skills</a>
+        <a href="skills.html" aria-label="View skills page">Skills</a>
         <span>|</span>
-        <a href="contact.html">Contact</a>
+        <a href="contact.html" aria-label="Navigate to the contact page">Contact</a>
     </nav>
     
-    <h1>Contact</h1>
+    <main id="main-content">
+        <h1>Contact</h1>
 
-    <div class="contact-layout">
-        <div class="contact-info">
-            <p>Bushra Khazaleh</p>
-            <p>900 S Crouse Ave</p>
-            <p>Syracuse, NY 13244</p>
+        <div class="contact-layout">
+            <section class="contact-info">
+                <header>
+                    <h2>Address</h2>
+                </header>
+                <p>Bushra Khazaleh</p>
+                <p>900 S Crouse Ave</p>
+                <p>Syracuse, NY 13244</p>
+            </section>
+
+            <section class="contact-info">
+                <header>
+                    <h2>Contact Information</h2>
+                </header>
+                <p><a href="mailto:bskhazal@syr.edu">Email Bushra Khazaleh</a></p>
+                <p>
+                    <img src="../images/LinkedIn-Logos/LI-In-Bug.png" alt="LinkedIn logo">
+                    <a href="https://www.linkedin.com/in/bushra-khazaleh/" target="_blank" aria-label="Visit Bushra Khazaleh's LinkedIn profile">My LinkedIn Profile</a>
+                </p>
+            </section>
         </div>
+        
+        <div class="contact-layout">
+            <section class="contact-form">
+                <header>
+                    <h2>Contact Form</h2>
+                </header>
+                <form action="https://formspree.io/f/xblrvkad" method="post">
+                    <label for="fname">First Name:</label>
+                    <input type="text" id="fname" name="fname" aria-label="Enter your first name">
 
-        <div class="contact-info">
-            <p><a href="mailto:bskhazal@syr.edu">Bushra Khazaleh Email</a></p>
-            <p>
-                <img src="../images/LinkedIn-Logos/LI-In-Bug.png" alt="LinkedIn Logo">
-                <a href="https://www.linkedin.com/in/bushra-khazaleh/" target="_blank">My LinkedIn Profile</a>
-            </p>
+                    <label for="lname">Last Name:</label>
+                    <input type="text" id="lname" name="lname" aria-label="Enter your last name">
+
+                    <label for="appointment">What day are you available to schedule a meeting?</label>
+                    <textarea id="appointment" name="appointment" rows="5" cols="50" aria-label="Enter your availability"></textarea>
+
+                    <fieldset>
+                        <legend>What type of clothes are you looking for?</legend>
+                        <input type="radio" id="a" name="clothes" value="two_piece">
+                        <label for="a">Long two-piece set</label>
+
+                        <input type="radio" id="b" name="clothes" value="abaya">
+                        <label for="b">Abaya</label>
+
+                        <input type="radio" id="c" name="clothes" value="khimar">
+                        <label for="c">Khimar</label>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>What colors do you feel most comfortable wearing?</legend>
+                        <input type="checkbox" id="d" name="colors" value="red">
+                        <label for="d">Red</label>
+
+                        <input type="checkbox" id="e" name="colors" value="blue">
+                        <label for="e">Blue</label>
+
+                        <input type="checkbox" id="f" name="colors" value="green">
+                        <label for="f">Green</label>
+
+                        <input type="checkbox" id="g" name="colors" value="white">
+                        <label for="g">White</label>
+
+                        <input type="checkbox" id="h" name="colors" value="black">
+                        <label for="h">Black</label>
+
+                        <input type="checkbox" id="i" name="colors" value="gray">
+                        <label for="i">Gray</label>
+                    </fieldset>
+
+                    <button type="submit">Send Form</button>
+                </form>
+            </section>
+
+            <section class="contact-info">
+                <header>
+                    <h2>Map</h2>
+                </header>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2916.132187748252!2d-76.13627248828469!3d43.038650171017615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d9f39fba2ccc55%3A0x5e6089065251084d!2sSyracuse%20University!5e0!3m2!1sen!2sus!4v1726284893963!5m2!1sen!2sus" 
+                    style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" aria-label="Map showing Syracuse University"></iframe>
+            </section>
         </div>
-    </div>
-    
-
-    <div class="contact-layout">
-        <div class="contact-form">
-            <form action="https://formspree.io/f/xblrvkad" method="post">
-                <label for="fname">First Name:</label>
-                <input type="text" id="fname" name="fname"><br><br>
-
-                <label for="lname">Last Name:</label>
-                <input type="text" id="lname" name="lname"><br><br>
-
-                <label for="appointment">What day are you available to schedule a meeting?</label><br>
-                <textarea id="appointment" name="appointment" rows="5" cols="50"></textarea><br><br>
-
-                <label for="Photos">What type of clothes are you looking for?</label><br>
-                <input type="radio" id="a" name="letters" value="two_piece">
-                <label for="a">Long two piece set</label><br>
-
-                <input type="radio" id="b" name="letters" value="abaya">
-                <label for="b">Abaya</label><br>
-
-                <input type="radio" id="c" name="letters" value="khimar">
-                <label for="c">Khimar</label><br><br>
-
-                <label for="Colors">What colors do you feel most comfortable wearing?</label><br>
-                <input type="checkbox" id="d" name="letters" value="red">
-                <label for="d">Red</label><br>
-
-                <input type="checkbox" id="e" name="letters" value="blue">
-                <label for="e">Blue</label><br>
-
-                <input type="checkbox" id="f" name="letters" value="green">
-                <label for="f">Green</label><br>
-
-                <input type="checkbox" id="g" name="letters" value="white">
-                <label for="g">White</label><br>
-
-                <input type="checkbox" id="h" name="letters" value="black">
-                <label for="h">Black</label><br>
-
-                <input type="checkbox" id="i" name="letters" value="gray">
-                <label for="i">Gray</label><br><br>
-
-                <input type="submit" value="Send Form">
-            </form>
-        </div>
-
-        <div class="contact-info">
-            <p>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2916.132187748252!2d-76.13627248828469!3d43.038650171017615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d9f39fba2ccc55%3A0x5e6089065251084d!2sSyracuse%20University!5e0!3m2!1sen!2sus!4v1726284893963!5m2!1sen!2sus" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </p>
-        </div>
-    </div>
+    </main>
 </body>
 </html>
