@@ -1,0 +1,346 @@
+/* General Page Styles */
+body {
+    font-family: Georgia, serif;
+    background-color: #F5F5DC; /* Soft beige background */
+    color: #333;
+    margin: 20px;
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: #FFD700; /* Gold background */
+    color: #006400; /* Dark green text */
+    padding: 15px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: #006400; /* Dark green for header text */
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #006400; /* Dark green background */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #FFD700; /* Gold text */
+    padding: 10px 15px;
+    margin: 0 10px;
+    border: 2px solid #FFD700; /* Gold border */
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav a:hover {
+    background-color: #FFD700; /* Gold background */
+    color: #006400; /* Dark green text on hover */
+}
+
+/* Main Content */
+main {
+    text-align: center;
+}
+
+.intro p {
+    font-size: 1.2em;
+    margin: 20px 0;
+    color: #555; /* Darker gray for intro text */
+}
+
+.product-category {
+    margin: 20px 0;
+    padding: 15px;
+    border: 1px solid #006400; /* Dark green border */
+    border-radius: 5px;
+    background-color: #e0f7fa; /* Light blue background */
+}
+
+.product-category h2 {
+    color: #006400; /* Dark green */
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #006400; /* Dark green background */
+    color: #FFD700; /* Gold text */
+    padding: 15px;
+    margin-top: 40px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    nav a {
+        display: block;
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .product-category {
+        margin: 10px 0;
+        padding: 10px;
+    }
+}
+
+/* Additional Styles for Page Structure */
+header, footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #FFD700; /* Gold background for header and footer */
+    color: #006400; /* Dark green text */
+}
+
+footer {
+    background-color: #006400; /* Dark green footer */
+    color: #FFD700; /* Gold text */
+}
+
+/* Links in Footer */
+footer a {
+    color: #FFD700;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    color: #006400; /* Dark green on hover */
+}
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #006400; /* Dark green background */
+    padding: 10px;
+    border-radius: 5px;
+    gap: 20px; /* Space between navigation items */
+}
+
+nav a {
+    text-decoration: none;
+    color: #FFD700; /* Gold text */
+    padding: 10px 15px;
+    border: 2px solid #FFD700; /* Gold border */
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+    display: inline-block; /* Ensures the buttons are aligned side by side */
+}
+
+nav a:hover {
+    background-color: #FFD700; /* Gold background */
+    color: #006400; /* Dark green text on hover */
+}
+
+/* Ensure buttons are not stacked in smaller screens */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: row; /* Keep buttons in a row */
+        align-items: center;
+        justify-content: center;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 0 10px;
+    }
+}
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: center; /* Align items in the center */
+    background-color: #006400; /* Dark green background */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #FFD700; /* Gold text */
+    padding: 10px 15px;
+    border: 2px solid #FFD700; /* Gold border */
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+    margin: 0 10px; /* Space between the buttons */
+}
+
+nav a:hover {
+    background-color: #FFD700; /* Gold background on hover */
+    color: #006400; /* Dark green text on hover */
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: row; /* Keep buttons in a row */
+        align-items: center;
+        justify-content: center;
+    }
+
+    nav a {
+        display: inline-block; /* Ensure buttons are side by side */
+        margin: 0 10px;
+    }
+}
+/* Navigation */
+nav {
+    display: flex;  /* Ensures items are arranged horizontally */
+    justify-content: center; /* Align items in the center */
+    background-color: #006400; /* Dark green background */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #FFD700; /* Gold text */
+    padding: 10px 15px;
+    border: 2px solid #FFD700; /* Gold border */
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+    margin: 0 10px; /* Space between the buttons */
+}
+
+nav a:hover {
+    background-color: #FFD700; /* Gold background on hover */
+    color: #006400; /* Dark green text on hover */
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: row; /* Keep buttons in a row on smaller screens */
+        align-items: center;
+        justify-content: center;
+    }
+
+    nav a {
+        display: inline-block; /* Ensure buttons are side by side */
+        margin: 0 10px; /* Maintain spacing */
+    }
+}
+/* Flexbox container for images */
+.image-container {
+    display: flex;
+    justify-content: space-between; /* Space between images */
+    gap: 10px; /* Adds space between images */
+    flex-wrap: wrap; /* Ensures images wrap on smaller screens */
+}
+
+.image-container img {
+    width: 20%; /* Makes each image take up 1/3 of the container */
+    height: auto; /* Maintains aspect ratio */
+    max-width: 300; /* Ensures the image does not exceed the container's width */
+}
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.main {
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.section {
+    margin-bottom: 40px;
+}
+
+.image-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.image {
+    max-width: 30%;
+    height: auto;
+}
+
+.featured-image, .trending-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 20px;
+}
+
+footer {
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 10px;
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    text-decoration: none;
+}
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.product-category {
+    flex: 1 1 30%;
+    margin: 10px;
+}
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+    .product-category {
+        width: 80%;
+    }
+}
+@media (max-width: 768px) {
+    .header-container {
+        text-align: center;
+    }
+    .article-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

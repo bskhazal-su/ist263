@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modest Wear Hub - Shop Directory</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Assuming your stylesheet is named styles.css -->
+    <script>
+        // JavaScript function to filter products based on price and style
+        function filterProducts() {
+            // Get the selected values from the form
+            var priceRange = document.getElementById('price-range').value;
+            var style = document.getElementById('style').value;
+
+            // Get all product elements
+            var products = document.getElementsByClassName('product-category');
+
+            // Loop through each product and apply the filter
+            for (var i = 0; i < products.length; i++) {
+                var product = products[i];
+                var productPrice = product.getAttribute('data-price');
+                var productStyle = product.getAttribute('data-style');
+
+                // Convert price to integer for comparison
+                var priceRangeArr = priceRange.split('-');
+                var minPrice = parseInt(priceRangeArr[0]);
+                var maxPrice = parseInt(priceRangeArr[1]);
+
+                // Check if the product matches the selected filters
+                if (productPrice >= minPrice && productPrice <= maxPrice && (style === "all" || productStyle === style)) {
+                    product.style.display = "block"; // Show product
+                } else {
+                    product.style.display = "none"; // Hide product
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <!-- Skip to content link for accessibility -->
+    <a href="#main" class="skip-link">Skip to main content</a>
+
+    <header>
+        <h1>Shop Modest Fashion</h1>
+    </header>
+
+    <nav>
+        <a href="welcome.html">Home</a>
+        <a href="shop.html">Shop Directory</a>
+        <a href="blog.html">Modest Fashion Blog</a>
+    </nav>
+
+    <main id="main">
+        <section class="intro">
+            <p>Finding modest clothing in the West doesn’t have to be a challenge. Our shop directory brings together online stores and brands dedicated to providing fashionable, modest wear. Explore a variety of clothing options, including:</p>
+        </section>
+
+        <section class="filters">
+            <p>Use the filters below to narrow your search based on price, style, or occasion.</p>
+            <form onsubmit="event.preventDefault(); filterProducts();">
+                <!-- Price Range Filter -->
+                <label for="price-range">Price Range:</label>
+                <select id="price-range" name="price-range">
+                    <option value="25-75">$25 - $75</option>
+                    <option value="75-150">$75 - $150</option>
+                    <option value="150-300">$150 - $300</option>
+                </select>
+                <br>
+
+                <!-- Style Filter -->
+                <label for="style">Style:</label>
+                <select id="style" name="style">
+                    <option value="all">All</option>
+                    <option value="casual">Casual</option>
+                    <option value="formal">Formal</option>
+                    <option value="others">Others</option>
+                </select>
+                <br>
+
+                <!-- Submit Button -->
+                <button type="submit">Apply Filters</button>
+            </form>
+        </section>
+
+        <!-- Product Categories with correct alt tags -->
+        <section class="product-category" data-price="50" data-style="casual">
+            <h2>Hijabs</h2>
+            <p>From simple everyday styles to elegant designs, find the perfect hijab for every occasion.</p>
+            <img src="IMG_2184.JPG" alt="A collection of different hijabs for various occasions" width="20%" height="auto">
+        </section>
+
+        <section class="product-category" data-price="100" data-style="formal">
+            <h2>Abayas</h2>
+            <p>Discover abayas that are both stylish and modest, with options for casual wear or special events.</p>
+            <img src="IMG_7613.jpg" alt="A variety of abayas in different colors and styles" width="20%" height="auto">
+        </section>
+
+        <section class="product-category" data-price="70" data-style="casual">
+            <h2>Maxi Dresses</h2>
+            <p>Browse our selection of loose-fitting, full-coverage dresses that are ideal for any season.</p>
+            <img src="IMG_2718.JPG" alt="Maxi dresses for modest fashion lovers" width="20%" height="auto">
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Modest Wear Hub</p>
+    </footer>
+
+</body>
+</html>
+
+
