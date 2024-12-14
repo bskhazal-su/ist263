@@ -344,3 +344,35 @@ main {
         align-items: center;
     }
 }
+/* Style for the skip link */
+.skip-link {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #4CAF50; /* Green background */
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    z-index: 1000; /* Ensure it's on top of other elements */
+}
+
+/* Hover effect for the skip link */
+.skip-link:hover {
+    background-color: #45a049;
+}
+
+/* Visually hide the link initially, but keep it accessible for screen readers */
+.skip-link:focus {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    z-index: 1000;
+}
